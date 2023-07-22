@@ -1,0 +1,43 @@
+.btn {
+	padding: 12px 30px 14px 30px;
+	border: 1px solid $black;
+	border-radius: 53px;
+
+	transition: .2s ease-in-out;
+
+	&:hover {
+		color: $white;
+		background: $black;
+	}
+
+	&:focus {
+		color: $white;
+		background: $black;
+	}
+
+	&:active {
+		color: $white;
+		background: $black;
+	}
+
+	&--off {
+		pointer-events: none;
+		border: 1px solid #bdbdbd;
+		color: #bdbdbd;
+
+		&:hover {
+			color: #bdbdbd;
+			background: transparent;
+		}
+
+		&:focus {
+			color: #bdbdbd;
+			background: transparent;
+		}
+
+		&:active {
+			color: #bdbdbd;
+			background: transparent;
+		}
+	}
+}

@@ -1,0 +1,33 @@
+.banner {
+	margin-bottom: 30px;
+
+	padding-top: 60px;
+
+	@media screen and (max-width: $md) {
+		padding-top: 30px;
+	}
+
+	&__title {
+		margin-bottom: 30px;
+
+		text-align: center;
+		@media screen and (max-width: $md) {
+			text-align: start;
+		}
+	}
+
+	&__text {
+		margin-bottom: 70px;
+		@media screen and (max-width: $lg) {
+			margin-bottom: 30px;
+		}
+
+		font-size: 30px;
+		text-align: center;
+	}
+
+	&__img {
+		object-fit: cover;
+		object-position: center;
+	}
+}

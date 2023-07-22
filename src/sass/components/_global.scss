@@ -1,0 +1,19 @@
+body {
+	display: flex;
+	flex-direction: column;
+	.page {flex-grow: 1;}
+
+	font-family: 'Inter', sans-serif;
+	color: $black;
+
+	background: $bg;
+}
+
+::-webkit-scrollbar {width: 8px;}
+::-webkit-scrollbar-track {background: $bg;}
+::-webkit-scrollbar-thumb {background: $black;	border-radius: 8px;}
+::selection {color: $white; background: $black;}
+
+.dn {
+	display: none;
+}

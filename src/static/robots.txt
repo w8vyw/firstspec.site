@@ -1,0 +1,7 @@
+User-agent: Yandex
+Disallow:
+User-agent: Googlebot
+Disallow:
+User-agent: *
+Disallow:
+Sitemap: https://firstspec.site/sitemap.xml

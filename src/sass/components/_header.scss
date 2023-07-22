@@ -1,0 +1,93 @@
+.header {
+	position: sticky;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	width: 100%;
+	background: $bg;
+}
+
+.nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px 0;
+
+	font-size: 16px;
+
+	&__list {
+		display: flex;
+		gap: 50px;
+
+		@media screen and (max-width: $lg) {
+			display: none;
+		}
+	}
+
+	&__link {
+		position: relative;
+
+		display: block;
+		padding: 5px;
+
+		&::after {
+			content: '';
+
+			position: absolute;
+			bottom: 10%;
+			left: 5px;
+
+			display: block;
+			width: calc(100% - 10px);
+			height: 1.5px;
+
+			background: $black;
+
+			transition: .2s ease-in-out;
+
+			transform: scaleX(0);
+			transform-origin: center;
+		}
+
+		&:hover {
+			&::after {
+				transform: scaleX(1);
+			}
+		}
+
+		&:focus {
+			&::after {
+				transform: scaleX(1);
+			}
+		}
+
+		&:active {
+			&::after {
+				transform: scaleX(1);
+			}
+		}
+	}
+
+	&__contacts {
+		display: flex;
+		gap: 50px;
+
+		@media screen and (max-width: $sm) {
+			gap: 25px;
+		}
+	}
+
+	&__tel {
+		display: block;
+		padding: 5px;
+	}
+
+	&__mail {
+		display: block;
+		padding: 5px;
+
+		@media screen and (max-width: 525px) {
+			display: none;
+		}
+	}
+}

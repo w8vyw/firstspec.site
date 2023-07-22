@@ -1,0 +1,11 @@
+.slogan {
+	margin-bottom: 100px;
+
+	text-align: center;
+
+	@media screen and (max-width: $md) {
+		margin-bottom: 70px;
+
+		text-align: start;
+	}
+}

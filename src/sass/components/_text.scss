@@ -1,0 +1,44 @@
+.h1 {
+	font-family: 'Geologica', sans-serif;
+	font-size: 50px;
+	font-weight: 500;
+
+	@media screen and (max-width: $lg) {
+		font-size: 40px;
+	}
+
+	@media screen and (max-width: $md) {
+		font-size: 35px;
+	}
+
+	@media screen and (max-width: $sm) {
+		font-size: 30px;
+	}
+}
+
+.title {
+	margin-bottom: 55px;
+
+	font-family: 'Geologica', sans-serif;
+	font-size: 45px;
+	font-weight: 500;
+
+	@media screen and (max-width: $lg) {
+		margin-bottom: 30px;
+
+		font-size: 40px;
+	}
+
+	@media screen and (max-width: $md) {
+		font-size: 35px;
+		text-align: start;
+	}
+
+	@media screen and (max-width: $sm) {
+		font-size: 30px;
+	}
+}
+
+.title--center {
+	text-align: center;
+}

@@ -1,0 +1,77 @@
+.footer {
+	padding: 50px 0;
+	@media screen and (max-width: $sm) {
+		padding: 35px 0;
+	}
+
+	background: $bg2;
+
+	&__wrapper {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		gap: 90px;
+	}
+
+	&__section {
+	}
+
+	&__info {
+		&-contacts {
+			display: flex;
+			flex-direction: column;
+			gap: 2px;
+
+			font-size: 16px;
+		}
+		&-contacts-item {
+		}
+	}
+
+	&__logo {
+		display: block;
+		margin-bottom: 15px;
+	}
+
+	&__links {
+		&-list {
+			display: flex;
+			flex-direction: column;
+			gap: 5px;
+		}
+		&-item {
+		}
+	}
+
+	&__link {
+		display: block;
+		padding: 5px;
+
+		transition: .2s ease-in-out;
+
+		&:hover {
+			color: $gray;
+		}
+		&:focus {
+			color: $gray;
+		}
+		&:active {
+			color: $gray;
+		}
+	}
+
+	&__other {
+		display: flex;
+		flex-direction: column;
+		gap: 5px;
+
+		font-size: 15px;
+		@media screen and (max-width: $md) {
+			font-size: 14px;
+		}
+		color: $gray;
+
+		&-item {
+		}
+	}
+}
